@@ -2,6 +2,28 @@
 
 A small educational 2D reinforcement-learning racing environment.
 
+## Visual overview
+
+### Training metrics
+
+The training runs record collisions, rewards, and episode steps for the different agents:
+
+![Training collisions](informative_images/episodevscollision.png)
+
+![Training rewards](informative_images/episodevsrewards.png)
+
+![Training steps](informative_images/episodevssteps.png)
+
+### Final race
+
+The trained agents compete in a shared final race:
+
+![Final race results](informative_images/final_result.png)
+
+![Race replay](informative_images/race.gif)
+
+The race is also available as a [video recording](informative_images/sarsa%20training.mov).
+
 The same track/environment is used to train several agents:
 
 - Random
@@ -109,3 +131,19 @@ The default reward is primarily based on forward progress:
 - episode ends after one training lap or a timeout
 
 The reward is deliberately simple. Experiment with it — reward design is part of RL.
+
+## Contributing
+
+Contributions are welcome. To propose a change:
+
+1. Fork the repository and create a focused branch for your change.
+2. Install the dependencies with `pip install -r requirements.txt`.
+3. Make the change and add or update tests and documentation where appropriate.
+4. Run the relevant training, race, or verification commands locally.
+5. Open a pull request with a clear description of the change, the motivation, and any relevant training results or screenshots.
+
+Please keep pull requests focused, preserve the educational nature of the implementations, and avoid committing generated model files or large logs unless they are needed to reproduce the change.
+
+## License
+
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
