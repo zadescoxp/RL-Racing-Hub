@@ -94,8 +94,8 @@ Train one algorithm:
 python train.py --algo qlearning --episodes 3000
 python train.py --algo sarsa --episodes 3000
 python train.py --algo montecarlo --episodes 3000
-python train.py --algo dqn --episodes 1000
-python train.py --algo ppo --episodes 1000
+python train.py --algo dqn --episodes 3000
+python train.py --algo ppo --episodes 3000
 ```
 
 For the tabular methods, `--episodes 3000` is a reasonable first experiment.
