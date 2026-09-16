@@ -1,0 +1,6 @@
+numpy>=1.26
+pygame>=2.5
+torch>=2.2
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
