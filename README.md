@@ -4,6 +4,36 @@ A small educational 2D reinforcement-learning racing environment.
 
 ## Visual overview
 
+### Final race
+
+The trained agents compete in a shared final race:
+
+![Final race results](informative_images/final_result.png)
+
+![Race replay](informative_images/race.gif)
+
+### Individual training session
+
+This replay shows what a single SARSA training session looked like while the agent learned to navigate the track:
+
+![SARSA training session](informative_images/sarsa_training.gif)
+
+The original recording is also available as a [video file](informative_images/sarsa%20training.mov).
+
+#### Results and agent mapping
+
+Each driver name in the race represents a different reinforcement-learning model:
+
+| Position | Driver | Model | Result |
+| --- | --- | --- | --- |
+| 1 | Charles LeCrash | Q-Learning | Finished |
+| 2 | Max Verstoppin | DQN | Finished |
+| 3 | Lewis Hamiltone | Monte Carlo | Finished |
+| 4 | Fernando Alon-slow | SARSA | DNF |
+| 5 | Lando No-Race | PPO | DNF |
+
+**Q-Learning was the winning model**, with Charles LeCrash finishing first. DQN finished second and Monte Carlo finished third, while SARSA and PPO did not complete the race.
+
 ### Training metrics
 
 The training runs record collisions, rewards, and episode steps for the different agents:
@@ -13,16 +43,6 @@ The training runs record collisions, rewards, and episode steps for the differen
 ![Training rewards](informative_images/episodevsrewards.png)
 
 ![Training steps](informative_images/episodevssteps.png)
-
-### Final race
-
-The trained agents compete in a shared final race:
-
-![Final race results](informative_images/final_result.png)
-
-![Race replay](informative_images/race.gif)
-
-The race is also available as a [video recording](informative_images/sarsa%20training.mov).
 
 The same track/environment is used to train several agents:
 
